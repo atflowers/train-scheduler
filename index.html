@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>train'n day</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://momentjs.com/downloads/moment.js"></script>
+  <script src="assets/javascript/main.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<form>
+		<div id="form-left">
+			<div class="input-container">
+				<p>Train Name:</p>
+				<input type="text" name="tName" placeholder="e.g., Irish Hollow Express">
+			</div>
+			<div class="input-container">
+				<p>Destination:</p>
+				<input type="text" name="dest" placeholder="e.g., Galena">
+			</div>
+			<div class="input-container">
+				<p>First Train Time:</p>
+				<input type="text" name="tTime" placeholder="Select initial train start time.">
+			</div>
+			<div class="input-container">
+				<p>Frequency (min):</p>
+				<input type="text" name="freq" placeholder="Minutes between stations.">
+			</div>
+		</div>
+
+		<div id="form-right">
+			<input type="submit" value="Submit">
+		</div>
+	</form> 
+
+	<div id="results-container">
+		<p id="results"></p>
+	</div>
+</body>
+
+</html>
